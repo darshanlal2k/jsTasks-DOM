@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM VALIDATION</title>
+</head>
+
+<body>
+    <form id="myForm">
+        <div>
+            <label for="username">UserName</label>
+            <input type="text" name="username" id="username">
+        </div>
+        <div>
+            <label for="age">Age</label>
+            <input type="text" name="age" id="age">
+        </div>
+        <div>
+            <label>Gender</label>
+            <div>
+                <input type="radio" name="gender" id="male" value="Male">
+                <label for="male">Male</label>
+
+            </div>
+            <div>
+                <input type="radio" name="gender" id="female" value="Female">
+                <label for="female">Female</label>
+
+            </div>
+        </div>
+        <div>
+            <label for="mobile_number">Mobile Number</label>
+            <input type="text" name="mobile_number" id="mobile_number">
+        </div>
+        <div>
+            <label for="aadhar_number">Aadhar Number</label>
+            <input type="text" name="aadhar_number" id="aadhar_number">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email">
+        </div>
+        <div>
+            <label>Interested Area</label>
+            <div>
+                <input type="checkbox" name="interest" id="interest_sports" value="Sports">
+                <label for="interest_sports">Sports</label>
+
+            </div>
+            <div>
+                <input type="checkbox" name="interest" id="interest_entertainment" value="Entertainment">
+                <label for="interest_entertainment">Entertainment</label>
+
+            </div>
+            <div>
+                <input type="checkbox" name="interest" id="interest_technology" value="Technology">
+                <label for="interest_technology">Technology</label>
+
+            </div>
+        </div>
+        <div>
+            <label for="state">State</label>
+            <select name="state" id="state">
+                <option value="none">choose</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Puducherry">Puducherry</option>
+                <option value="TamilNadu">Tamil Nadu</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Delhi">Delhi</option>
+            </select>
+        </div>
+        <div>
+            <label for="district">District</label>
+            <select name="district" id="district">
+                <option value="none">choose</option>
+                <option value="Ariyalur">Ariyalur</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Coimbatore">Coimbatore</option>
+                <option value="Cuddalore">Cuddalore</option>
+                <option value="Dharmapuri">Dharmapuri</option>
+                <option value="Dindigul">Dindigul</option>
+                <option value="Erode">Erode</option>
+                <option value="Kanniyakumari">Kanniyakumari</option>
+                <option value="Karur">Karur</option>
+                <option value="Tirunelveli">Tirunelveli</option>
+            </select>
+        </div>
+        <div>
+            <label for="Country">Country</label>
+            <input type="text" name="Country" id="Country">
+        </div>
+        <div>
+            <label for="address">Address</label>
+            <textarea name="address" id="address" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="comments">Comments</label>
+            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <button type="button" id="reset_btn">Reset</button>
+            <button type="button" id="submit_btn">Submit</button>
+        </div>
+    </form>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
