@@ -4,19 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mutation Observer - Childlist</title>
+    <link
+      rel="stylesheet"
+      href="/jsTasks-DOM/mutation_observer_childlist/css/style.css"
+    />
   </head>
   <body>
-    <div id="heading">
-      <h1>Mutation Observer - <i>Child List</i></h1>
+    <div id="container">
+      <div id="heading">
+        <h1>Mutation Observer - <i>Child List</i></h1>
+      </div>
+      <select name="message" id="message">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <div id="edited">
+        <h4>MUTATION OBSERVERED</h4>
+        <h5>
+          <strong>You have added one more OPTION in SELECTION tag</strong>
+        </h5>
+        <button onclick="edit_hide()">OK</button>
+      </div>
     </div>
-    <select name="message" id="message">
-      <option value="male">Male</option>
-      <option value="female">Female</option>
-    </select>
-    <div id="edited">
-      <h4>MUTATION OBSERVERED</h4>
-      <h5><strong>You have added one more OPTION in SELECTION tag</strong></h5>
-      <button onclick="edit_hide()">OK</button>
-    </div>
+    <script src="/jsTasks-DOM/mutation_observer_childlist/js/script.js"></script>
   </body>
 </html>
