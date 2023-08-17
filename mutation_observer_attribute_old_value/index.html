@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mutation Observer - Attribute Old Value</title>
+    <link
+      rel="stylesheet"
+      href="/jsTasks-DOM/mutation_observer_attribute_old_value/css/style.css"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <div id="heading">
+        <h1>Mutation Observer - <i>Attribute Old Value</i></h1>
+      </div>
+      <div id="message">
+        <label for="username">Username</label>
+        <input
+          id="comments"
+          type="text"
+          disabled
+          value="text"
+          name="textName"
+        />
+      </div>
+      <div id="edited">
+        <h4>MUTATION OBSERVERED</h4>
+        <h5>
+          <strong
+            >You have edited "value" Attribute Old Value<i>text added</i> in
+            input tag</strong
+          >
+        </h5>
+        <p>
+          <strong>Attribute Old Value <i>"text"</i></strong>
+        </p>
+        <p>
+          <strong>Attribute New Value <i>"text added"</i></strong>
+        </p>
+        <button onclick="edit_hide()">OK</button>
+      </div>
+    </div>
+    <script src="/jsTasks-DOM/mutation_observer_attribute_old_value/js/script.js"></script>
+  </body>
+</html>
