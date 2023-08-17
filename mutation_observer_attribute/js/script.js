@@ -1,10 +1,6 @@
-let edits = "",
-  comments = "",
-  observer = "";
-
-edits = document.getElementById("edited");
-comments = document.getElementById("comments");
-observer = new MutationObserver((records) => {
+let edits = document.getElementById("edited");
+let comments = document.getElementById("comments");
+let observer = new MutationObserver((records) => {
   edits.style.display = "block";
   console.log(records);
 });
