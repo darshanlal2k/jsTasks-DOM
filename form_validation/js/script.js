@@ -1,7 +1,7 @@
 var user_name = document.getElementById("username");
 
 user_name.addEventListener("keypress", username);
-var ab;
+// var ab;
 
 function username(event) {
     if (((event.keyCode > 64) && (event.keyCode <= 90)) || ((event.keyCode > 96) && (event.keyCode <= 122))) {
