@@ -1,47 +1,28 @@
-var username = "",
-  age = "",
+let username = document.getElementById("username"),
+  age = document.getElementById("age"),
   gender_value = "",
   gender = "",
-  mobile = "",
-  aadhar = "",
-  email = "",
-  interestArea = "",
-  state = "",
-  country = "",
-  interestValues = "",
+  mobile = document.getElementById("mobile_number"),
+  aadhar = document.getElementById("aadhar_number"),
+  email = document.getElementById("email"),
+  interestArea = document.getElementsByName("interestArea"),
+  state = document.getElementById("state"),
+  country = document.getElementById("Country"),
+  interestValues = [],
   interestChecked = "",
   stateSelected = "",
   stateOption = "",
   stateName = "",
-  district = "",
+  district = document.getElementById("district"),
   districtSelected = "",
   districtOption = "",
   districtName = "",
-  address = "",
-  comments = "",
-  comments_value = "",
-  reset = "",
-  submit = "",
-  emailFormat = "",
-  form = "";
-
-username = document.getElementById("username");
-age = document.getElementById("age");
-mobile = document.getElementById("mobile_number");
-aadhar = document.getElementById("aadhar_number");
-email = document.getElementById("email");
-interestArea = document.getElementsByName("interestArea");
-state = document.getElementById("state");
-country = document.getElementById("Country");
-interestValues = [];
-district = document.getElementById("district");
-address = document.getElementById("address");
-comments = document.getElementById("comments");
-comments_value;
-reset = document.getElementById("reset_btn");
-submit = document.getElementById("submit_btn");
-emailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-form = document.getElementById("myForm");
+  address = document.getElementById("address"),
+  comments = document.getElementById("comments"),
+  reset = document.getElementById("reset_btn"),
+  submit = document.getElementById("submit_btn"),
+  emailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
+  form = document.getElementById("myForm");
 
 username.addEventListener("keypress", userName);
 age.addEventListener("keypress", userAge);
