@@ -1,4 +1,4 @@
-let username = document.getElementById("username"),
+var username = document.getElementById("username"),
   age = document.getElementById("age"),
   gender_value = "",
   gender = "",
@@ -38,7 +38,6 @@ submit.addEventListener("click", submitAll);
 gender = document.getElementsByName("gender").forEach(function (e) {
   e.addEventListener("change", function () {
     gender_value = e.value;
-    // alert("You have selected" + " " + gender_value + " " + "Gender");
   });
 });
 
@@ -59,38 +58,21 @@ function userCountry(event) {
     (event.keyCode > 64 && event.keyCode <= 90) ||
     (event.keyCode > 96 && event.keyCode <= 122)
   ) {
-    console.log(event.target.value);
     return true;
   } else {
     event.preventDefault();
     alert("Enter Only Alphabets");
   }
 }
-
-function userAddress(event) {
-  console.log(event.target.value);
-}
-
-function userComments(event) {
-  console.log(event.target.value);
-}
-
 function resetAll() {
   form.reset();
 }
-
-function submitAll(event) {
-  console.log(event.target.value);
-  // var total_form = document.getElementById("myform");
-  console.log(form.username.value);
-  // console.log(x);
+function submitAll() {
   if (username.value == "") {
     alert("please enter your Username");
   } else if (age.value == "") {
     alert("please enter your Age");
-  }
-  //console.log(x);
-  else if (gender_value == "" || gender_value == undefined) {
+  } else if (gender_value == "" || gender_value == undefined) {
     alert("please enter your Gender");
   } else if (mobile.value == "") {
     alert("please enter your Mobile");
@@ -111,8 +93,6 @@ function submitAll(event) {
   } else if (comments.value == "") {
     alert("please enter your Comments");
   } else {
-    //  alert("ok");
-
     alert(
       "Name is  :  " +
         " " +
