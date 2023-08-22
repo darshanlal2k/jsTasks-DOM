@@ -64,6 +64,7 @@ function userCountry(event) {
     alert("Enter Only Alphabets");
   }
 }
+
 function resetAll() {
   form.reset();
 }
