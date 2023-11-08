@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 100%;
+    background-color: red;
+    padding: 50px 0px;
+    font-size: 25px;
+}
+
+.parent{
+    width: 90%;
+    margin: 0 auto;
+    background-color: blue;
+    padding: 50px 0px;
+}
+
+.parent-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.child-one{
+    padding: 50px 0px ;
+    background-color: yellow;
+    width: 40%;
+}
+
+.child-one-one{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.textbox{
+    width: 50%;
+    height: 50px;
+}
+
+.button{
+    height: 40px;
+    width: 25%;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 1px solid black;
+}
+
+.child-two{
+    padding: 50px 0px ;
+    background-color: yellow;
+    width: 40%;
+}
+
+.child-two-olist{
+    text-align: center;
+}
+
+
+/*text input box css*/
+  
+.popupmodal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  
+  /* Modal Content */
+  .popuplist {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 50px;
+    border: 1px solid #888;
+    width: 40%;
+  }
+  
+  .popuptext{
+      width: 50%;
+      height: 40px;
+  }
+  
+  /* The Close Button */
+  .closebtn {
+    color: #aaaaaa;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .closebtn:hover,.closebtn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .right{
+    text-align: center;
+  }
+  
+  

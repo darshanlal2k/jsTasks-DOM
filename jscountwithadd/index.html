@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="parent">
+            <div class="parent-container">
+                <div class="child-one">
+                    <div class="child-one-one">
+                        <div>
+                            <input type="text" value="" class="textbox" id="textboxx" onfocus="this.value=''">
+                        </div>
+                        <div>
+                            <button onclick="submitone()" class="button" id="submitbtn">submit</button>
+                        </div>
+
+                        <div class="popuptask" id="popupopen">
+                            <!--second task-->
+                            <div id="givenName"></div>
+                            <button id="addbtn">ADD Name</button>
+
+                            <div id="popModal" class="popupmodal">
+                                <div class="popuplist">
+                                    <span class="closebtn">&times;</span>
+                                    <input id="userinput" type="text" class="popuptext" onfocus="this.value=''"
+                                        value="">
+                                    <button onclick="submit()">submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="child-two">
+                    <div class="child-two-two">
+                        <div id="pallari" class="right">
+                            <p id="finallist"></p>
+                        </div>
+                        <div>
+                            <table class="cetaphil" id="ibin"></table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/action.js"></script>
+</body>
+
+</html>
