@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="container-one">
+            <div class="container-form">
+                <div class="container-form-control">
+                    <form class="form-class" id="form-id" name="totalform">
+                        <!-----Name------>
+                        <div class="one">
+                            <label for="nameClass">Name : </label>
+                            <input type="text" class="nameClass" id="nameInputId" value="" maxlength="20" minlength="5"  name="username" onblur="darshan()">
+                        </div>
+                        <!-----Age------>
+                        <div class="two">
+                            <label for="ageClass"> Age : </label>
+                            <input type="number" class="ageClass" id="ageInputId" value="" max="25" min="18" name="userage">
+                        </div>
+                        <!-----Course------>
+                        <div class="three">
+                            <label for="courseClass">Courses : </label>
+                            <select name="courseClass" id="courseclass">
+                                <option selected="" value="Default">(Please select a course)</option>
+                                <option value="b.e">B.E</option>
+                                <option value="bsc">Bsc</option>
+                                <option value="msc">Msc</option>
+                                <option value="btech">B.Tech</option>
+                                <option value="mtech">M.tech</option>
+                            </select>
+                        </div>
+                        <!-----Sex------>
+                        <div class="four">
+                            <label for="sexClass">Sex :</label>
+                            <select name="sexclass" id="sexclass">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+                        <!-----Address------>
+                        <div class="five">
+                            <label for="addressClass">Address : </label>
+                            <input type="text" name="addressClass" id="addressclass" value="">
+                        </div>
+                        <!-----Mail------>
+                        <div class="six">
+                            <label for="email">Email Id : </label>
+                            <input type="email" class="emailClass" id="emailInputId" value="">
+                        </div>
+                        <!-----Submit Button------>
+                        <div>
+                            
+                            <button id="validbtn" class="validsubbtn" onclick="validateinput()" >Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container-two">
+            <div>
+                <h1>Students List</h1>
+            </div>
+            <div>
+                <table></table>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="action.js"></script>
+</body>
+
+</html>
+

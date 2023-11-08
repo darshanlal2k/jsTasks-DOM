@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    width: 90%;
+    display: flex;
+}
+
+.container-one{
+    width: 50%;
+}
+
+.container-form{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.one , .two , .three , .four , .five , .six {
+    margin-top: 20px;
+}
+
+input{
+    font-size: 20px;
+}
+
+label{
+    font-size: 20px;
+}
+
+button{
+    margin-top: 25px;
+    width: 20%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
